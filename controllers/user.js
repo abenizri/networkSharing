@@ -11,7 +11,7 @@ initialize();
 exports.show = async (ctx) => {
     let ip = ctx.params.ip
     await userAction.addUser({ ip, status: 'active' })
-    log.info(await userAction.getUser("109.186.238.61"));
+    // log.info(await userAction.getUser("109.186.238.61"));
     ctx.body = 'done'
 };
 
@@ -20,8 +20,8 @@ exports.update = async (ctx) => {
       ip,
       status
     } = ctx.request.body
-    console.log('here');
-    await userAction.addUser({ ip, status })
-    log.info(await userAction.getUser("109.186.238.61"));
+    let newStatus = (status) ? 'inactive' : 'active'
+    await userAction.addUser({ ip, status: newStatus })
+    // log.info(await userAction.getUser("109.186.238.61"));
     ctx.body = 'done'
 };

@@ -50,3 +50,5 @@
 {"name":"networkSharing","hostname":"avis-MBP","pid":12247,"level":30,"msg":"listing to port 3000","time":"2018-11-04T17:07:23.172Z","v":0}
 {"name":"networkSharing","hostname":"avis-MBP","pid":12259,"level":30,"msg":"listing to port 3000","time":"2018-11-04T17:08:25.853Z","v":0}
 {"name":"networkSharing","hostname":"avis-MBP","pid":12259,"level":30,"ip":"109.186.238.61","status":"inactive","msg":"","time":"2018-11-04T17:12:26.937Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":12737,"level":30,"msg":"listing to port 3000","time":"2018-11-04T20:55:06.000Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":12737,"level":30,"ip":"109.186.238.61","status":"inactive","msg":"","time":"2018-11-04T20:55:09.740Z","v":0}
