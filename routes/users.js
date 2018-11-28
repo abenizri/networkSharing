@@ -4,7 +4,7 @@ const ctrl = require('./../controllers/user')
 
 // var ctrl = new UserController()
 
-router.get("/user/:ip", ctrl.show)
+router.get("/get/:domain", ctrl.show)
 router.put("/update", ctrl.update)
 router.allowedMethods()
 module.exports = router;

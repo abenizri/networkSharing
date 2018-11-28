@@ -52,3 +52,258 @@
 {"name":"networkSharing","hostname":"avis-MBP","pid":12259,"level":30,"ip":"109.186.238.61","status":"inactive","msg":"","time":"2018-11-04T17:12:26.937Z","v":0}
 {"name":"networkSharing","hostname":"avis-MBP","pid":12737,"level":30,"msg":"listing to port 3000","time":"2018-11-04T20:55:06.000Z","v":0}
 {"name":"networkSharing","hostname":"avis-MBP","pid":12737,"level":30,"ip":"109.186.238.61","status":"inactive","msg":"","time":"2018-11-04T20:55:09.740Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13259,"level":30,"msg":"listing to port 3000","time":"2018-11-05T07:45:36.263Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13270,"level":30,"msg":"listing to port 3000","time":"2018-11-05T07:46:07.940Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13299,"level":30,"msg":"listing to port 3000","time":"2018-11-05T07:50:17.431Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13330,"level":30,"msg":"listing to port 3000","time":"2018-11-05T07:58:47.949Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13341,"level":30,"msg":"listing to port 3000","time":"2018-11-05T07:59:35.992Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13352,"level":30,"msg":"listing to port 3000","time":"2018-11-05T07:59:51.819Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13365,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:00:24.274Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13378,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:01:41.397Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13396,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:04:09.734Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13408,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:05:46.756Z","v":0}
+{"name":"networkSharing","color":"blue","hostname":"avis-MBP","pid":13455,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:09:19.641Z","v":0}
+{"name":"networkSharing","color":"blue","hostname":"avis-MBP","pid":13487,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:10:03.671Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13520,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:11:17.558Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13531,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:11:43.511Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13561,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:26:59.686Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13575,"level":30,"msg":"listing to port 3000","time":"2018-11-05T08:29:48.697Z","v":0}
+{"name":"networkSharing","hostname":"avis-MBP","pid":13575,"level":30,"msg":"connecting to mongodb","time":"2018-11-05T08:29:48.718Z","v":0}
+{"name":"networkSharing","hostname":"avis-MacBook-Pro.local","pid":53774,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:10:45.884Z","v":0}
+{"name":"networkSharing","hostname":"avis-MacBook-Pro.local","pid":53774,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:10:45.905Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53785,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:11:06.901Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53785,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:11:06.919Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53895,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:26:37.136Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53895,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:26:37.155Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53906,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:27:19.551Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53906,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:27:19.570Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53917,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:27:36.249Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53917,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:27:36.274Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53929,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:29:10.236Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53929,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:29:10.255Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53941,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:29:52.230Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53941,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:29:52.252Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53953,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:30:05.993Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53953,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:30:06.011Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53972,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:31:32.758Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53972,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:31:32.777Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53986,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:32:33.381Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":53986,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:32:33.423Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54005,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:33:29.560Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54005,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:33:29.581Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54016,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:35:11.084Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54016,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:35:11.107Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54055,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:45:27.265Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54055,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:45:27.285Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54066,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:46:21.673Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54066,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:46:21.694Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54078,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:47:26.829Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54078,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:47:26.891Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54088,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:48:43.644Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54088,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:48:43.663Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54100,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:49:30.889Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54100,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:49:30.908Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54113,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:50:49.081Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54113,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:50:49.102Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54124,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:51:32.157Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54124,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:51:32.176Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54137,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:53:32.328Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54137,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:53:32.352Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54149,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:54:22.629Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54149,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:54:22.702Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54161,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:55:02.394Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54161,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:55:02.413Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54172,"level":30,"msg":"listing to port 3000","time":"2018-11-26T09:55:29.022Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54172,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T09:55:29.049Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54399,"level":30,"msg":"listing to port 3000","time":"2018-11-26T10:23:45.797Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":54399,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T10:23:45.814Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56016,"level":30,"msg":"listing to port 3000","time":"2018-11-26T15:23:22.723Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56016,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T15:23:22.754Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56095,"level":30,"msg":"listing to port 3000","time":"2018-11-26T15:35:33.252Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56095,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T15:35:33.272Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56161,"level":30,"msg":"listing to port 3000","time":"2018-11-26T15:58:17.714Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56161,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T15:58:17.733Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56177,"level":30,"msg":"listing to port 3000","time":"2018-11-26T15:59:05.306Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56177,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T15:59:05.331Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56190,"level":30,"msg":"listing to port 3000","time":"2018-11-26T16:00:23.111Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56190,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T16:00:23.135Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56229,"level":30,"msg":"listing to port 3000","time":"2018-11-26T16:04:23.854Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56229,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T16:04:23.871Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56241,"level":30,"msg":"listing to port 3000","time":"2018-11-26T16:05:14.480Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56241,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T16:05:14.505Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56265,"level":30,"msg":"listing to port 3000","time":"2018-11-26T16:07:39.307Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56265,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T16:07:39.326Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56280,"level":30,"msg":"listing to port 3000","time":"2018-11-26T16:10:42.275Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56280,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T16:10:42.297Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56291,"level":30,"msg":"listing to port 3000","time":"2018-11-26T16:11:12.884Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56291,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T16:11:12.902Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56314,"level":30,"msg":"listing to port 3000","time":"2018-11-26T16:15:31.543Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":56314,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T16:15:31.568Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56489,"level":30,"msg":"listing to port 3000","time":"2018-11-26T16:59:31.935Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56489,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T16:59:31.956Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56504,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:00:50.670Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56504,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:00:50.689Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56522,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:05:42.114Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56522,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:05:42.137Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56551,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:07:30.087Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56551,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:07:30.109Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56564,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:08:52.985Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56564,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:08:53.005Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56585,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:13:49.537Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56585,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:13:49.554Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56596,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:15:45.794Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56596,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:15:45.812Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56619,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:18:05.255Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56619,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:18:05.274Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56631,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:18:51.928Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56631,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:18:51.946Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56653,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:20:10.161Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56653,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:20:10.180Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56689,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:22:15.798Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56689,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:22:15.824Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56700,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:23:27.813Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56700,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:23:27.831Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56715,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:28:37.148Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56715,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:28:37.165Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56727,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:29:46.391Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56727,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:29:46.414Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56739,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:30:54.489Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56739,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:30:54.511Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56750,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:31:23.904Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56750,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:31:23.923Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56774,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:40:37.789Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56774,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:40:37.810Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56798,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:52:28.124Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56798,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:52:28.143Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56812,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:53:51.491Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56812,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:53:51.516Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56827,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:56:45.216Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56827,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:56:45.233Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56843,"level":30,"msg":"listing to port 3000","time":"2018-11-26T17:59:40.116Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56843,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T17:59:40.136Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56898,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:08:44.997Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56898,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:08:45.018Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56911,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:11:49.282Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56911,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:11:49.300Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56925,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:13:31.564Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56925,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:13:31.581Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56936,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:15:36.338Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56936,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:15:36.360Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56948,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:16:42.033Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56948,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:16:42.050Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56960,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:18:14.371Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56960,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:18:14.390Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56975,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:18:58.426Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56975,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:18:58.443Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56988,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:20:16.511Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":56988,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:20:16.529Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":57011,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:26:26.694Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":57011,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:26:26.712Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":57121,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:48:29.655Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":57121,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:48:29.684Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":57132,"level":30,"msg":"listing to port 3000","time":"2018-11-26T18:49:02.222Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":57132,"level":30,"msg":"connecting to mongodb","time":"2018-11-26T18:49:02.244Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59624,"level":30,"msg":"listing to port 3000","time":"2018-11-27T10:44:33.455Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59624,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T10:44:33.476Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59651,"level":30,"msg":"listing to port 3000","time":"2018-11-27T10:48:22.781Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59651,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T10:48:22.798Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59684,"level":30,"msg":"listing to port 3000","time":"2018-11-27T10:49:10.845Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59684,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T10:49:10.871Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59708,"level":30,"msg":"listing to port 3000","time":"2018-11-27T10:49:42.271Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59708,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T10:49:42.288Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59744,"level":30,"msg":"listing to port 3000","time":"2018-11-27T10:55:49.735Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59744,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T10:55:49.753Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59759,"level":30,"msg":"listing to port 3000","time":"2018-11-27T10:58:05.880Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59759,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T10:58:05.912Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59893,"level":30,"msg":"listing to port 3000","time":"2018-11-27T11:12:10.697Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59893,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T11:12:10.718Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59973,"level":30,"msg":"listing to port 3000","time":"2018-11-27T11:35:20.159Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59973,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T11:35:20.177Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59984,"level":30,"msg":"listing to port 3000","time":"2018-11-27T11:35:49.986Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":59984,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T11:35:50.009Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60018,"level":30,"msg":"listing to port 3000","time":"2018-11-27T11:47:25.854Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60018,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T11:47:25.872Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60274,"level":30,"msg":"listing to port 3000","time":"2018-11-27T13:33:12.075Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60274,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T13:33:12.101Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60497,"level":30,"msg":"listing to port 3000","time":"2018-11-27T18:10:08.945Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60497,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T18:10:08.971Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60612,"level":30,"msg":"listing to port 3000","time":"2018-11-27T18:46:42.545Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60612,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T18:46:42.564Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60631,"level":30,"msg":"listing to port 3000","time":"2018-11-27T18:51:02.775Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60631,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T18:51:02.794Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60659,"level":30,"msg":"listing to port 3000","time":"2018-11-27T18:58:10.856Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60659,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T18:58:10.877Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60683,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:01:16.685Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60683,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:01:16.702Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60694,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:01:59.687Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60694,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:01:59.707Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60706,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:05:53.238Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60706,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:05:53.258Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60727,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:08:28.527Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60727,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:08:28.554Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60738,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:08:57.007Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60738,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:08:57.024Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60753,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:13:16.064Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60753,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:13:16.083Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60764,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:14:36.356Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60764,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:14:36.377Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60826,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:30:32.068Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60826,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:30:32.088Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60849,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:31:42.554Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60849,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:31:42.571Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60864,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:32:07.772Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60864,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:32:07.796Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60888,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:41:59.405Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60888,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:41:59.422Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60900,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:42:20.424Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60900,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:42:20.441Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60935,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:45:35.474Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60935,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:45:35.511Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60946,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:46:02.670Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60946,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:46:02.689Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60957,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:46:36.156Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60957,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:46:36.173Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60990,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:54:32.810Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":60990,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:54:32.828Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61001,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:55:19.575Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61001,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:55:19.592Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61014,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:55:48.732Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61014,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:55:48.752Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61028,"level":30,"msg":"listing to port 3000","time":"2018-11-27T19:56:56.907Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61028,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T19:56:56.925Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61146,"level":30,"msg":"listing to port 3000","time":"2018-11-27T20:13:18.242Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61146,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T20:13:18.280Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61187,"level":30,"msg":"listing to port 3000","time":"2018-11-27T20:18:10.427Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61187,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T20:18:10.445Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61209,"level":30,"msg":"listing to port 3000","time":"2018-11-27T20:18:53.314Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61209,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T20:18:53.334Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61222,"level":30,"msg":"listing to port 3000","time":"2018-11-27T20:19:17.984Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61222,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T20:19:18.003Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61233,"level":30,"msg":"listing to port 3000","time":"2018-11-27T20:20:02.338Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61233,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T20:20:02.355Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61244,"level":30,"msg":"listing to port 3000","time":"2018-11-27T20:20:32.315Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61244,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T20:20:32.332Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61255,"level":30,"msg":"listing to port 3000","time":"2018-11-27T20:21:20.533Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61255,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T20:21:20.551Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61291,"level":30,"msg":"listing to port 3000","time":"2018-11-27T20:22:55.008Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":61291,"level":30,"msg":"connecting to mongodb","time":"2018-11-27T20:22:55.025Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":63443,"level":30,"msg":"listing to port 3000","time":"2018-11-28T12:27:37.598Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":63443,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T12:27:37.619Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":63793,"level":30,"msg":"listing to port 3000","time":"2018-11-28T13:22:18.849Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":63793,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T13:22:18.871Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":65060,"level":30,"msg":"listing to port 3000","time":"2018-11-28T15:58:06.413Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":65060,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T15:58:06.442Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":65072,"level":30,"msg":"listing to port 3000","time":"2018-11-28T15:59:02.204Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MacBook-Pro.local","pid":65072,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T15:59:02.222Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65278,"level":30,"msg":"listing to port 3000","time":"2018-11-28T16:22:12.352Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65278,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T16:22:12.391Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65334,"level":30,"msg":"listing to port 3000","time":"2018-11-28T16:23:31.095Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65334,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T16:23:31.126Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65357,"level":30,"msg":"listing to port 3000","time":"2018-11-28T16:24:39.125Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65357,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T16:24:39.147Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65375,"level":30,"msg":"listing to port 3000","time":"2018-11-28T16:27:07.532Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65375,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T16:27:07.556Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65403,"level":30,"msg":"listing to port 3000","time":"2018-11-28T16:28:46.584Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65403,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T16:28:46.601Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65734,"level":30,"msg":"listing to port 3000","time":"2018-11-28T16:42:24.012Z","v":0}
+{"name":"letUsKnow","hostname":"avis-MBP","pid":65734,"level":30,"msg":"connecting to mongodb","time":"2018-11-28T16:42:24.036Z","v":0}
