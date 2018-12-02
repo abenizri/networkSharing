@@ -1,5 +1,5 @@
 // const COLLECTION_NAME = 'users'
-const COLLECTION_NAME = 'raw_data'
+const COLLECTION_NAME = 'clicks'
 
 module.exports = class Users {
   constructor(mongo) {
@@ -12,7 +12,7 @@ module.exports = class Users {
     // await this.collection.ensureIndex({ domainId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ userId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ selector: 1 }, { unique: true })
-    await this.collection.ensureIndex({ domain: 1, userId: 1, eventType: 1, selector: 1, elementInfo: 1, url: 1, date: 1 } )
+    await this.collection.ensureIndex({ domain: 1, userId: 1, eventType: 1, selector: 1, url: 1, date: 1 } )
   }
 
   async truncateTable() {
@@ -22,7 +22,7 @@ module.exports = class Users {
   async aggregateSelectorClicksPerUserCount(data){
     return await this.collection.aggregate(
       [
-        { $match: { domain: 'localhost' } },
+        { $match: { domain: data.domain } },
         {"$group" : {_id:{selector:"$selector", userId: "$userId"}, count:{$sum: 1}}},
         { $sort: { count : -1 } }
     ]).toArray()
@@ -37,7 +37,7 @@ module.exports = class Users {
     ]).toArray()
   }
 
-  async getSelectorInfo(){
+  async getSelectorInfo(data){
     return await this.collection.aggregate(
       [
         { $match: { domain: 'localhost' } },

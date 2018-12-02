@@ -4,14 +4,13 @@ global.config = config
 const Koa = require("koa");
 const app = new Koa();
 const bodyParser = require('koa-bodyparser');
-const router = require('./routes/users')
+const router = require('./routes/feedbacks')
 const koaCors = require('koa-cors')
 
 const koaOptions = {
       origin: true,
       credentials: true,
       methods: ['GET', 'PUT', 'POST']
-      // headers: ['Content-Type', 'Authorization']
     };
 
 app.use(bodyParser());
