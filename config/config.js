@@ -13,10 +13,10 @@ global.log = bunyan.createLogger({
 var config = {
   "production": {
     //"database": "mongodb://<user>:<pwd>@apollo.modulusmongo.net:27017/db",
-    "database": "mongodb://18.223.162.72:27017/let_us_now"
+    "database": "mongodb://18.223.162.72:27017/let_us_know"
   },
   "default": {
-    "database": "mongodb://127.0.0.1:27017/let_us_now"
+    "database": "mongodb://127.0.0.1:27017/let_us_know"
   }
 }
 

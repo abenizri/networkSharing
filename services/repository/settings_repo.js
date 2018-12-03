@@ -12,7 +12,7 @@ module.exports = class Users {
     // await this.collection.ensureIndex({ domainId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ userId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ selector: 1 }, { unique: true })
-    await this.collection.ensureIndex({ domain: 1, selector: 1 } )
+    await this.collection.ensureIndex({ domain: 1, selector: 1 , category: 1} )
   }
 
   async truncateTable() {
@@ -31,7 +31,7 @@ module.exports = class Users {
   async aggregateSelectorClicksCount(data){
     return await this.collection.aggregate(
       [
-        { $match: { domain: 'localhost' } },
+        { $match: { domain: data.domain} },
         {"$group" : {_id:{selector:"$selector"}, count:{$sum: "$count"}}},
         { $sort: { count : -1 } }
     ]).toArray()
@@ -40,7 +40,7 @@ module.exports = class Users {
   async getSelectorInfo(data){
     return await this.collection.aggregate(
       [
-        { $match: { domain: 'localhost' } },
+        { $match: { domain: data.domain } },
         {"$group" : {_id:{selector:"$selector",  elementInfo: "$elementInfo"}, count:{$sum: 1}}},
         { $sort: { count : -1 } }
     ]).toArray()
@@ -80,9 +80,10 @@ module.exports = class Users {
   async updateBulk(query) {
     if (!query || query.length === 0) return
     let bulkOperations = _.map(query, match => {
+      let clone = Object.assign({},match)
       return {
         updateOne: {
-          filter: { domain: match.domain, selector: match.selector, skuId: match.skuId },
+          filter: { domain: match.domain, selector: match.selector, category: match.category },
           update: { $set: match },
           upsert: true
         }

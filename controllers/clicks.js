@@ -1,5 +1,6 @@
 const ClicksHendler = require('../lib/clicks_handler')
 const SettingsHendler = require('../lib/settings_handler')
+const moment = require('moment')
 var clicksHendler = new ClicksHendler()
 var settingsHendler = new SettingsHendler()
 
@@ -65,24 +66,37 @@ exports.update = async (ctx) => {
       eventType,
       selector,
       elementInfo,
-      url,
+      category,
     } = ctx.request.body
 
-    let find = await clicksHendler.findSelector({ domain, userId, eventType ,selector, url })
+    let find = await clicksHendler.findSelector({ domain, userId, eventType ,selector, category })
+
     if (find.length === 0) {
+      let name = clicksHendler.getElementObjectId(elementInfo)
+      if (!name) {
+        ctx.state = 500
+        return ctx.body ={
+          error: 'product info is insufficient'
+        }
+      }
+
       let data = {
-        domain,
         selector,
+        domain,
+        category,
+        elementId: name,
+        featureName: name,
         usage: 'high',
-        feedback: 'no',
-        sendFeedbackTo: 'all',
-        duration: 'month',
-        status: 'active'
+        enableCampaign: 'no',
+        recipients: 'all',
+        durationStart: null,
+        durationend: null,
+        status: 'pending'
       }
       await settingsHendler.insert(data)
     }
 
-    await clicksHendler.incrementClicks({ domain, userId, eventType ,selector, elementInfo, url, date })
+    await clicksHendler.incrementClicks({ domain, userId, eventType ,selector, elementInfo, category, date })
     ctx.body = {
       status: 'success'
     }
