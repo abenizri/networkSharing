@@ -23,7 +23,7 @@ module.exports = class Users {
     return await this.collection.aggregate(
       [
         { $match: { domain: data.domain } },
-        {"$group" : {_id:{selector:"$selector", userId: "$userId"}, count:{$sum: 1}}},
+        {"$group" : {_id:{selector:"$selector", userId: "$userId", category: "$category"}, count:{$sum: 1}}},
         { $sort: { count : -1 } }
     ]).toArray()
   }
@@ -32,7 +32,7 @@ module.exports = class Users {
     return await this.collection.aggregate(
       [
         { $match: { domain: data.domain } },
-        {"$group" : {_id:{selector:"$selector"}, count:{$sum: "$count"}}},
+        {"$group" : {_id:{selector:"$selector" , category: "$category"}, count:{$sum: "$count"}}},
         { $sort: { count : -1 } }
     ]).toArray()
   }
@@ -41,7 +41,7 @@ module.exports = class Users {
     return await this.collection.aggregate(
       [
         { $match: { domain: data.domain } },
-        {"$group" : {_id:{selector:"$selector",  elementInfo: "$elementInfo"}, count:{$sum: 1}}},
+        {"$group" : {_id:{selector:"$selector", elementInfo: "$elementInfo", category: "$category"}, count:{$sum: 1}}},
         { $sort: { count : -1 } }
     ]).toArray()
   }
@@ -72,7 +72,7 @@ module.exports = class Users {
         data ,
        // { $set: clone },
        { $inc: { count: 1 } },
-       { upsert: true }
+       { upsert: false }
     )
 
 

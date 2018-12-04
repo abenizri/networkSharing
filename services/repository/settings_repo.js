@@ -19,12 +19,11 @@ module.exports = class Users {
     return this.collection.remove({})
   }
 
-  async aggregateSelectorClicksPerUserCount(data){
+  async aggregateSelectorAndCategoryPerDomain(data){
     return await this.collection.aggregate(
       [
         { $match: { domain: data.domain } },
-        {"$group" : {_id:{selector:"$selector", userId: "$userId"}, count:{$sum: 1}}},
-        { $sort: { count : -1 } }
+        {"$group" : {_id:{selector:"$selector",  category: "$category"}}}
     ]).toArray()
   }
 
@@ -85,7 +84,7 @@ module.exports = class Users {
         updateOne: {
           filter: { domain: match.domain, selector: match.selector, category: match.category },
           update: { $set: match },
-          upsert: true
+          upsert: false
         }
       }
     })

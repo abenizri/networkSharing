@@ -32,9 +32,9 @@ exports.getFeedback = async (ctx) => {
 exports.show = async (ctx) => {
     let domain = ctx.params.domain
     let configData = await settingsHendler.findSelector({domain})
-    // console.log(configData);
+    let selectorAndCategoryPerDomain = await settingsHendler.getAggSelectorAndCategoryPerDomain({domain})
     if (configData.length > 0) {
-      ctx.body = await clicksHendler.getClicksPerDomain({domain}, configData)
+      ctx.body = await clicksHendler.getClicksPerDomain({domain}, configData, selectorAndCategoryPerDomain)
       ctx.set('Access-Control-Allow-Origin', '*');
       ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
       ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
@@ -46,7 +46,6 @@ exports.show = async (ctx) => {
 };
 
 exports.save = async (ctx) => {
-    // console.log(ctx.request.body)
     await settingsHendler.saveTable(ctx.request.body.data)
     ctx.body = {
       status: 'success'
@@ -60,7 +59,7 @@ exports.save = async (ctx) => {
 exports.update = async (ctx) => {
     let datetime = new Date()
     let date = datetime.toISOString().slice(0,10)
-    const {
+    let {
       domain,
       userId,
       eventType,
@@ -69,10 +68,19 @@ exports.update = async (ctx) => {
       category,
     } = ctx.request.body
 
-    let find = await clicksHendler.findSelector({ domain, userId, eventType ,selector, category })
+    category = category.replace('/', '').replace('.html','')
+    if (category === '') category = 'home'
 
+
+    if (!selector) {
+      ctx.state = 500
+      return ctx.body ={
+        error: 'selector is null'
+      }
+    }
+    let find = await clicksHendler.findSelector({ domain, userId, eventType ,selector, category })
     if (find.length === 0) {
-      let name = clicksHendler.getElementObjectId(elementInfo)
+      let name = await clicksHendler.getElementObjectId(elementInfo)
       if (!name) {
         ctx.state = 500
         return ctx.body ={
@@ -89,6 +97,7 @@ exports.update = async (ctx) => {
         usage: 'high',
         enableCampaign: 'no',
         recipients: 'all',
+        feedbackForm: 'default',
         durationStart: null,
         durationend: null,
         status: 'pending'
