@@ -16,25 +16,39 @@ function initialize() {
 initialize();
 
 exports.getFeedback = async (ctx) => {
+
+  try {
     let domain = ctx.params.domain
     ctx.body = [
-      'html>body>div:nth-child(1)>div:nth-child(5)>div:nth-child(2)>main>div>div>div:nth-child(2)>div>div:nth-child(1)',
-      'html>body>div:nth-child(1)>div:nth-child(5)>div:nth-child(2)>main>div>div>div:nth-child(2)>div>div:nth-child(3)'
-    ]
+      {
+        selector: 'html>body>div:nth-child(1)>div:nth-child(5)>div:nth-child(2)>main>div>div>div:nth-child(2)>div>div:nth-child(1)',
+        form: 'default',
+        page: '*/index'
+      },
+      {
+        selector: 'html>body>div:nth-child(1)>div:nth-child(5)>div:nth-child(2)>main>div>div>div:nth-child(2)>div>div:nth-child(3)',
+        form: 'default',
+        page: '*/email'
+      }
 
+    ]
+    ctx.status = 200
+  } catch (error) {
+    ctx.status = 500
+    ctx.body = []
+  } finally {
     ctx.set('Access-Control-Allow-Origin', '*');
     ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
-
-    ctx.status = 200
+  }
 };
 
 exports.show = async (ctx) => {
     let domain = ctx.params.domain
     let configData = await settingsHendler.findSelector({domain})
-    let selectorAndCategoryPerDomain = await settingsHendler.getAggSelectorAndCategoryPerDomain({domain})
+    let selectorAndPagePerDomain = await settingsHendler.getAggSelectorAndPagePerDomain({domain})
     if (configData.length > 0) {
-      ctx.body = await clicksHendler.getClicksPerDomain({domain}, configData, selectorAndCategoryPerDomain)
+      ctx.body = await clicksHendler.getClicksPerDomain({domain}, configData, selectorAndPagePerDomain)
       ctx.set('Access-Control-Allow-Origin', '*');
       ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
       ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
@@ -65,11 +79,11 @@ exports.update = async (ctx) => {
       eventType,
       selector,
       elementInfo,
-      category,
+      page,
     } = ctx.request.body
 
-    category = category.replace('/', '').replace('.html','')
-    if (category === '') category = 'home'
+    page = page.replace('/', '').replace('.html','')
+    if (page === '') page = 'home'
 
 
     if (!selector) {
@@ -78,7 +92,7 @@ exports.update = async (ctx) => {
         error: 'selector is null'
       }
     }
-    let find = await clicksHendler.findSelector({ domain, userId, eventType ,selector, category })
+    let find = await clicksHendler.findSelector({ domain, userId, eventType ,selector, page })
     if (find.length === 0) {
       let name = await clicksHendler.getElementObjectId(elementInfo)
       if (!name) {
@@ -91,7 +105,7 @@ exports.update = async (ctx) => {
       let data = {
         selector,
         domain,
-        category,
+        page,
         elementId: name,
         featureName: name,
         usage: 'high',
@@ -99,13 +113,13 @@ exports.update = async (ctx) => {
         recipients: 'all',
         feedbackForm: 'default',
         durationStart: null,
-        durationend: null,
+        durationEnd: null,
         status: 'pending'
       }
       await settingsHendler.insert(data)
     }
 
-    await clicksHendler.incrementClicks({ domain, userId, eventType ,selector, elementInfo, category, date })
+    await clicksHendler.incrementClicks({ domain, userId, eventType ,selector, elementInfo, page, date })
     ctx.body = {
       status: 'success'
     }

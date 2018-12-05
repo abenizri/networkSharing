@@ -12,7 +12,7 @@ module.exports = class Users {
     // await this.collection.ensureIndex({ domainId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ userId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ selector: 1 }, { unique: true })
-    await this.collection.ensureIndex({ domain: 1, userId: 1, eventType: 1, selector: 1, category: 1, date: 1 } )
+    await this.collection.ensureIndex({ domain: 1, userId: 1, eventType: 1, selector: 1, page: 1, date: 1 } )
   }
 
   async truncateTable() {
@@ -23,7 +23,7 @@ module.exports = class Users {
     return await this.collection.aggregate(
       [
         { $match: { domain: data.domain } },
-        {"$group" : {_id:{selector:"$selector", userId: "$userId", category: "$category"}, count:{$sum: 1}}},
+        {"$group" : {_id:{selector:"$selector", userId: "$userId", page: "$page"}, count:{$sum: 1}}},
         { $sort: { count : -1 } }
     ]).toArray()
   }
@@ -32,7 +32,7 @@ module.exports = class Users {
     return await this.collection.aggregate(
       [
         { $match: { domain: data.domain } },
-        {"$group" : {_id:{selector:"$selector" , category: "$category"}, count:{$sum: "$count"}}},
+        {"$group" : {_id:{selector:"$selector" , page: "$page"}, count:{$sum: "$count"}}},
         { $sort: { count : -1 } }
     ]).toArray()
   }
@@ -41,7 +41,7 @@ module.exports = class Users {
     return await this.collection.aggregate(
       [
         { $match: { domain: data.domain } },
-        {"$group" : {_id:{selector:"$selector", elementInfo: "$elementInfo", category: "$category"}, count:{$sum: 1}}},
+        {"$group" : {_id:{selector:"$selector", elementInfo: "$elementInfo", page: "$page"}, count:{$sum: 1}}},
         { $sort: { count : -1 } }
     ]).toArray()
   }

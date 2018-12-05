@@ -12,18 +12,18 @@ module.exports = class Users {
     // await this.collection.ensureIndex({ domainId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ userId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ selector: 1 }, { unique: true })
-    await this.collection.ensureIndex({ domain: 1, selector: 1 , category: 1} )
+    await this.collection.ensureIndex({ domain: 1, selector: 1 , page: 1} )
   }
 
   async truncateTable() {
     return this.collection.remove({})
   }
 
-  async aggregateSelectorAndCategoryPerDomain(data){
+  async aggregateSelectorAndPagePerDomain(data){
     return await this.collection.aggregate(
       [
         { $match: { domain: data.domain } },
-        {"$group" : {_id:{selector:"$selector",  category: "$category"}}}
+        {"$group" : {_id:{selector:"$selector",  page: "$page"}}}
     ]).toArray()
   }
 
@@ -82,7 +82,7 @@ module.exports = class Users {
       let clone = Object.assign({},match)
       return {
         updateOne: {
-          filter: { domain: match.domain, selector: match.selector, category: match.category },
+          filter: { domain: match.domain, selector: match.selector, page: match.page },
           update: { $set: match },
           upsert: false
         }
