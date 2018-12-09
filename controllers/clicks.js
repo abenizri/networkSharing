@@ -1,38 +1,65 @@
 const ClicksHendler = require('../lib/clicks_handler')
 const SettingsHendler = require('../lib/settings_handler')
+const FeedbacksHendler = require('../lib/feedbacks_handler')
 const moment = require('moment')
-var clicksHendler = new ClicksHendler()
-var settingsHendler = new SettingsHendler()
+const clicksHendler = new ClicksHendler()
+const settingsHendler = new SettingsHendler()
+const feedbacksHendler = new FeedbacksHendler()
 
 function initialize() {
+
   new Promise(async resolve => {
     return resolve(await clicksHendler.initialize())
   });
-
+  //
   new Promise(async resolve => {
     return resolve(await settingsHendler.initialize())
+  });
+
+  new Promise(async resolve => {
+    return resolve(await feedbacksHendler.initialize())
   });
 }
 initialize();
 
+exports.submitFeeddback = async (ctx) => {
+  let datetime = new Date()
+  let date = datetime.toISOString().slice(0,10)
+  const {
+    domain,
+    userId,
+    selector,
+    page,
+    feedbackRate,
+    feedbackText
+  } = ctx.request.body
+  await feedbacksHendler.insert({domain, userId, selector, page, feedbackRate, feedbackText , date})
+  ctx.body = {
+    status: 'success'
+  }
+  ctx.status = 200
+  ctx.set('Access-Control-Allow-Origin', '*');
+  ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
+}
+
 exports.getFeedback = async (ctx) => {
 
   try {
-    let domain = ctx.params.domain
-    ctx.body = [
-      {
-        selector: 'html>body>div:nth-child(1)>div:nth-child(5)>div:nth-child(2)>main>div>div>div:nth-child(2)>div>div:nth-child(1)',
-        form: 'default',
-        page: '*/index'
-      },
-      {
-        selector: 'html>body>div:nth-child(1)>div:nth-child(5)>div:nth-child(2)>main>div>div>div:nth-child(2)>div>div:nth-child(3)',
-        form: 'default',
-        page: '*/email'
-      }
+    let output = []
+    let feedbackElement = await settingsHendler.getDailyFeedbackSelector({domain: ctx.params.domain, page: ctx.query.page})
+    for (let selector of feedbackElement) {
 
-    ]
+    var startDate = new Date(selector.durationStart);
+    var endDate = new Date(selector.durationEnd);
+    var myDate = new Date()
+    if (startDate <= myDate && myDate <= endDate) {
+        output.push(selector)
+    }
+    ctx.body = output
+
     ctx.status = 200
+  }
   } catch (error) {
     ctx.status = 500
     ctx.body = []

@@ -1,7 +1,7 @@
 const _ = require('lodash')
-const COLLECTION_NAME = 'settings'
+const COLLECTION_NAME = 'feedbacks'
 
-module.exports = class SettingsRepo {
+module.exports = class FeedbacksRepo {
   constructor(mongo) {
     this.mongodb = mongo
   }
@@ -45,8 +45,9 @@ module.exports = class SettingsRepo {
     ]).toArray()
   }
 
-  async insert(userInfo) {
-    return this.collection.insertOne(userInfo)
+  async insert(data) {
+    // console.log(data);
+    return this.collection.insertOne(data)
   }
 
   async get(selector) {

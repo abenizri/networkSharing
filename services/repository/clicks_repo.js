@@ -1,13 +1,13 @@
 // const COLLECTION_NAME = 'users'
 const COLLECTION_NAME = 'clicks'
 
-module.exports = class Users {
+module.exports = class ClicksRepo {
   constructor(mongo) {
     this.mongodb = mongo
   }
 
   async initialize() {
-    await this.mongodb.createCollection(COLLECTION_NAME)
+    await this.mongodb.createCollection(COLLECTION_NAME) 
     this.collection = await this.mongodb.collection(COLLECTION_NAME)
     // await this.collection.ensureIndex({ domainId: 1 }, { unique: true })
     // await this.collection.ensureIndex({ userId: 1 }, { unique: true })
