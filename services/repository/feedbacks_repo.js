@@ -18,6 +18,68 @@ module.exports = class FeedbacksRepo {
   async truncateTable() {
     return this.collection.remove({})
   }
+  async aggregateFeedbacksPerDomainAndSelector(data) {
+    return await this.collection.aggregate([
+                 {
+                    $lookup: {
+                       from: "settings",
+                       let: {
+                          selector: "$selector",
+                          domain: "$domain"
+                       },
+                       pipeline: [
+                          {
+                             $match: {
+                                $expr: {
+                                   $and: [
+                                      {
+                                         $eq: [
+                                            "$selector",
+                                            "$$selector"
+                                         ]
+                                      },
+                                      {
+                                         $eq: [
+                                            "$domain",
+                                            "$$domain"
+                                         ]
+                                      }
+                                   ]
+                                }
+                             }
+                          }
+                       ],
+                       as: "result"
+                    }
+                 }
+              ]
+          ).toArray()
+  }
+//   async aggregateFeedbacksPerDomainAndSelector(data) {
+//     // db.feedbacks.aggregate([{
+//       return await this.collection.aggregate([{
+//       $lookup: {
+//         from: "settings",
+//         let: {
+//               selector: "$selector",
+//               domain: "$domain"
+//            },
+//            pipeline: [{
+//               $match: {
+//                   $expr: {
+//                       $and: [
+//                                { $eq: [  "$selector", "$$selector" ] },
+//                                { $eq: [  "$domain", "$$domain" ] },
+//                             ]
+//                           }
+//                         }
+//                   }
+//               ],
+//             as: "results"
+//           }
+//         }
+//       ])
+// }
 
   async aggregateSelectorAndPagePerDomain(data){
     return await this.collection.aggregate(

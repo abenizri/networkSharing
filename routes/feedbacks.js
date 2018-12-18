@@ -4,6 +4,7 @@ const ctrl = require('./../controllers/clicks')
 
 // var ctrl = new UserController()
 router.post('/submitFeeddback',ctrl.submitFeeddback)
+router.get('/getFeedbacksPerDomain/:domain', ctrl.getFeedbackPerDomain)
 router.get('/get/:domain', ctrl.show)
 router.get('/getFeedbackElement/:domain', ctrl.getFeedback)
 router.put('/update', ctrl.update)

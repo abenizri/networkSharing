@@ -13,7 +13,11 @@ const koaOptions = {
       methods: ['GET', 'PUT', 'POST']
     };
 
-app.use(bodyParser());
+app.use(bodyParser({
+  json: {limit: '50mb', extended: true},
+urlencoded: {limit: '50mb', extended: true},
+formLimit: "5mb"
+}));
 app.use(router.routes());
 app.use(koaCors(koaOptions))
 

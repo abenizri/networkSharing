@@ -20,7 +20,14 @@ function initialize() {
     return resolve(await feedbacksHendler.initialize())
   });
 }
+
 initialize();
+
+function _normailzePage(page) {
+  let str = page.replace('/', '').replace('.html','')
+  if (str === '') str = 'home'
+  return str
+}
 
 exports.submitFeeddback = async (ctx) => {
   let datetime = new Date()
@@ -29,11 +36,12 @@ exports.submitFeeddback = async (ctx) => {
     domain,
     userId,
     selector,
+    dataUri,
     page,
     feedbackRate,
     feedbackText
   } = ctx.request.body
-  await feedbacksHendler.insert({domain, userId, selector, page, feedbackRate, feedbackText , date})
+  await feedbacksHendler.insert({domain, userId, selector,dataUri, page: _normailzePage(page), feedbackRate, feedbackText , date})
   ctx.body = {
     status: 'success'
   }
@@ -43,11 +51,36 @@ exports.submitFeeddback = async (ctx) => {
   ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
 }
 
+exports.getFeedbackPerDomain = async (ctx) => {
+  let domain = ctx.params.domain
+  ctx.set('Access-Control-Allow-Origin', '*');
+  ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
+
+  ctx.status = 200
+  let feedbackRaw =  await feedbacksHendler.getAggSelectorAndPagePerDomain({domain})
+  let output = []
+  for (let elem of feedbackRaw) {
+      let obj = {
+        selector: elem.selector,
+        dataUri: elem.dataUri,
+        page: elem.page,
+        elementId: elem.result[0].elementId,
+        featureName: elem.result[0].featureName,
+        feedbackRate:  elem.feedbackRate,
+        feedbackText:  elem.feedbackText,
+        status: elem.result[0].status
+      }
+      output.push(obj)
+  }
+  ctx.body = output
+}
+
 exports.getFeedback = async (ctx) => {
 
   try {
     let output = []
-    let feedbackElement = await settingsHendler.getDailyFeedbackSelector({domain: ctx.params.domain, page: ctx.query.page})
+    let feedbackElement = await settingsHendler.getDailyFeedbackSelector({domain: ctx.params.domain, page: _normailzePage(ctx.query.page)})
     for (let selector of feedbackElement) {
 
     var startDate = new Date(selector.durationStart);
@@ -107,8 +140,8 @@ exports.update = async (ctx) => {
       selector,
       elementInfo,
       page,
+      dataUri
     } = ctx.request.body
-
     page = page.replace('/', '').replace('.html','')
     if (page === '') page = 'home'
 
@@ -133,6 +166,7 @@ exports.update = async (ctx) => {
         selector,
         domain,
         page,
+        dataUri,
         elementId: name,
         featureName: name,
         usage: 'high',
